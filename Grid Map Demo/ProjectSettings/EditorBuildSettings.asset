@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Test Area 1.unity
+    path: Assets/Cykie Productions/Grid Map/Samples/Scenes/Test Area 1.unity
     guid: 5a2a52b6bfc495940b3c6025b04c1f06
   - enabled: 1
-    path: Assets/Scenes/Map.unity
+    path: Assets/Cykie Productions/Grid Map/Samples/Scenes/Map.unity
     guid: 6d05783338665fd49914d732f15b2771
   m_configObjects: {}

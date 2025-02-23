@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using CykieProductions.Cytools;
 
 namespace SupanthaPaul
 {
-	public class InputSystem : MonoBehaviour
+	public class InputSystem : MonoBehaviour, IInputTracker
 	{
 		// input string caching
 		static readonly string HorizontalInput = "Horizontal";
@@ -14,11 +15,24 @@ namespace SupanthaPaul
 		static readonly string SwitchInput = "Switch";
 		static readonly string PauseInput = "Pause";
 
+		void Awake()
+		{
+			IInputTracker.TrySetCurrent(this);
+		}
+
 		public static float HorizontalRaw()
+		{
+			return IInputTracker.Current.HorizontalRaw();
+		}
+		public static float VerticalRaw()
+		{
+			return IInputTracker.Current.VerticalRaw();
+		}
+		float IInputTracker.HorizontalRaw()
 		{
 			return Input.GetAxisRaw(HorizontalInput);
 		}
-		public static float VerticalRaw()
+		float IInputTracker.VerticalRaw()
 		{
 			return Input.GetAxisRaw(VerticalInput);
 		}

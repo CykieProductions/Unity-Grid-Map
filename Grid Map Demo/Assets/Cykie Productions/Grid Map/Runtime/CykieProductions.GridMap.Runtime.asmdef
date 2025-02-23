@@ -1,0 +1,16 @@
+{
+    "name": "CykieProductions.GridMap.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:35e82d07703c6e744aac4e6194b8721c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using CykieProductions.Cytools;
 
 namespace SupanthaPaul
 {
-	public class PlayerController : MonoBehaviour
+	public class PlayerController : MonoBehaviour, IPlayerController
 	{
 		[SerializeField] private float speed;
 		[Header("Jumping")]
